@@ -1,0 +1,15 @@
+- defaultTab: summary
+  description: Just a test
+  executionEnabled: true
+  id: f1c32e91-4bd9-4c54-9761-994535539cb9
+  loglevel: INFO
+  name: Just a test
+  nodeFilterEditable: false
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - exec: echo this is a test
+    keepgoing: false
+    strategy: node-first
+  uuid: f1c32e91-4bd9-4c54-9761-994535539cb9
+
