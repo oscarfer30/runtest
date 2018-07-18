@@ -17,7 +17,6 @@
   scheduleEnabled: true
   sequence:
     commands:
-    - exec: pwd
     - exec: cd  ..
     - exec: pwd
     - exec: cd ..
