@@ -1,0 +1,28 @@
+- defaultTab: summary
+  description: ''
+  executionEnabled: true
+  id: b4edbfcd-9baa-4749-a853-7b700c78d051
+  loglevel: INFO
+  loglimit: 10MB
+  loglimitAction: halt
+  name: API List jobs
+  nodeFilterEditable: false
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - args: GET /api/17/scheduler/server/[UUID]/jobs
+      script: |-
+        Content-Type: application/xml
+        <job id="ID" href="[API url]" permalink="[GUI URL]" scheduled="true/false" scheduleEnabled="true/false"
+           enabled="true/false"
+           >
+            <name>Job Name</name>
+            <group>Job Name</group>
+            <project>Project Name</project>
+            <description>...</description>
+        </job>
+    keepgoing: false
+    strategy: node-first
+  timeout: 10m
+  uuid: b4edbfcd-9baa-4749-a853-7b700c78d051
+
