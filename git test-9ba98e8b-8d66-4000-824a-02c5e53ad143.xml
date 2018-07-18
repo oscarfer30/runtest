@@ -1,7 +1,7 @@
 <joblist>
   <job>
     <defaultTab>summary</defaultTab>
-    <description>just a test</description>
+    <description>git test</description>
     <dispatch>
       <excludePrecedence>true</excludePrecedence>
       <keepgoing>false</keepgoing>
@@ -11,6 +11,7 @@
     </dispatch>
     <executionEnabled>true</executionEnabled>
     <id>9ba98e8b-8d66-4000-824a-02c5e53ad143</id>
+    <logging limit='10MB' limitAction='halt' />
     <loglevel>INFO</loglevel>
     <name>git test</name>
     <nodeFilterEditable>false</nodeFilterEditable>
@@ -18,12 +19,14 @@
       <filter>name: linuxVM</filter>
     </nodefilters>
     <nodesSelectedByDefault>true</nodesSelectedByDefault>
+    <retry delay='1m'>2</retry>
     <scheduleEnabled>true</scheduleEnabled>
     <sequence keepgoing='false' strategy='node-first'>
       <command>
         <exec>ls -l</exec>
       </command>
     </sequence>
+    <timeout>5m</timeout>
     <uuid>9ba98e8b-8d66-4000-824a-02c5e53ad143</uuid>
   </job>
 </joblist>
