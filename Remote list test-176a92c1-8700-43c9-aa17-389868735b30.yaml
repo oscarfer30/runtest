@@ -19,7 +19,6 @@
     commands:
     - exec: cd  ..
     - exec: pwd
-    - exec: cd ..
     keepgoing: false
     strategy: node-first
   uuid: 176a92c1-8700-43c9-aa17-389868735b30
