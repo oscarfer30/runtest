@@ -6,7 +6,7 @@
   loglimit: 10MB
   loglimitAction: halt
   loglimitStatus: failed
-  name: git test
+  name: git-test
   nodeFilterEditable: false
   nodefilters:
     dispatch:
@@ -24,6 +24,7 @@
   sequence:
     commands:
     - exec: ls -l
+    - exec: pwd
     keepgoing: false
     strategy: node-first
   timeout: 5m
