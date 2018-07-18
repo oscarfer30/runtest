@@ -1,0 +1,30 @@
+- defaultTab: summary
+  description: git test
+  executionEnabled: true
+  id: 9ba98e8b-8d66-4000-824a-02c5e53ad143
+  loglevel: INFO
+  loglimit: 10MB
+  loglimitAction: halt
+  loglimitStatus: failed
+  name: git test
+  nodeFilterEditable: false
+  nodefilters:
+    dispatch:
+      excludePrecedence: true
+      keepgoing: false
+      rankOrder: ascending
+      successOnEmptyNodeFilter: false
+      threadcount: '1'
+    filter: 'name: linuxVM'
+  nodesSelectedByDefault: true
+  retry:
+    delay: 1m
+    retry: '2'
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - exec: ls -l
+    keepgoing: false
+    strategy: node-first
+  timeout: 5m
+  uuid: 9ba98e8b-8d66-4000-824a-02c5e53ad143
