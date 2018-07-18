@@ -1,0 +1,29 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description>just a test</description>
+    <dispatch>
+      <excludePrecedence>true</excludePrecedence>
+      <keepgoing>false</keepgoing>
+      <rankOrder>ascending</rankOrder>
+      <successOnEmptyNodeFilter>false</successOnEmptyNodeFilter>
+      <threadcount>1</threadcount>
+    </dispatch>
+    <executionEnabled>true</executionEnabled>
+    <id>9ba98e8b-8d66-4000-824a-02c5e53ad143</id>
+    <loglevel>INFO</loglevel>
+    <name>git test</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <nodefilters>
+      <filter>name: linuxVM</filter>
+    </nodefilters>
+    <nodesSelectedByDefault>true</nodesSelectedByDefault>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <exec>ls -l</exec>
+      </command>
+    </sequence>
+    <uuid>9ba98e8b-8d66-4000-824a-02c5e53ad143</uuid>
+  </job>
+</joblist>
