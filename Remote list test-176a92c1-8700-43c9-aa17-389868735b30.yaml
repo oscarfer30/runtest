@@ -1,0 +1,27 @@
+- defaultTab: output
+  description: Training test
+  executionEnabled: true
+  id: 176a92c1-8700-43c9-aa17-389868735b30
+  loglevel: INFO
+  name: Remote list test
+  nodeFilterEditable: false
+  nodefilters:
+    dispatch:
+      excludePrecedence: true
+      keepgoing: false
+      rankOrder: ascending
+      successOnEmptyNodeFilter: false
+      threadcount: '1'
+    filter: 'name: linuxVM'
+  nodesSelectedByDefault: true
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - exec: pwd
+    - exec: cd  ..
+    - exec: pwd
+    - exec: cd ..
+    keepgoing: false
+    strategy: node-first
+  uuid: 176a92c1-8700-43c9-aa17-389868735b30
+
