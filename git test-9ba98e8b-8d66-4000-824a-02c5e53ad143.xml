@@ -11,7 +11,7 @@
     </dispatch>
     <executionEnabled>true</executionEnabled>
     <id>9ba98e8b-8d66-4000-824a-02c5e53ad143</id>
-    <logging limit='10MB' limitAction='halt' />
+    <logging limit='10MB' limitAction='halt' status='failed' />
     <loglevel>INFO</loglevel>
     <name>git test</name>
     <nodeFilterEditable>false</nodeFilterEditable>
@@ -24,6 +24,9 @@
     <sequence keepgoing='false' strategy='node-first'>
       <command>
         <exec>ls -l</exec>
+      </command>
+      <command>
+        <exec>pwd</exec>
       </command>
     </sequence>
     <timeout>5m</timeout>
