@@ -9,7 +9,7 @@
   sequence:
     commands:
     - exec: echo this is a test
-    keepgoing: false
+    keepgoing: true
     strategy: node-first
   uuid: f1c32e91-4bd9-4c54-9761-994535539cb9
 
