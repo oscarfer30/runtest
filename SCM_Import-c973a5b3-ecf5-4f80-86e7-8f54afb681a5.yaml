@@ -8,7 +8,7 @@
   nodefilters:
     dispatch:
       excludePrecedence: true
-      keepgoing: true
+      keepgoing: false
       rankOrder: ascending
       successOnEmptyNodeFilter: false
       threadcount: '1'
