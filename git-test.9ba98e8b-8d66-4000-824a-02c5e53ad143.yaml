@@ -24,7 +24,7 @@
   sequence:
     commands:
     - exec: ls -l
-    keepgoing: false
+    keepgoing: true
     strategy: node-first
   timeout: 5m
   uuid: 9ba98e8b-8d66-4000-824a-02c5e53ad143
